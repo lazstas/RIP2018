@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+    List
+{% endblock %}
+{% block content %}
+    <h1 class="text-left">Test</h1>
+    {% for i in items %}
+        {% include 'main/list_item.html' %}
+    {% endfor %}
+{% endblock %}
